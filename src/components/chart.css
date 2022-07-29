@@ -1,0 +1,29 @@
+.bar__chart{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.bar__chart-amount{
+  color: var(--cream);
+  background-color: var(--dark-brown);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  /* width:rem; */
+  text-align: center;
+  font-weight: bold;
+}
+
+.bar__chart-height{
+  cursor: pointer;
+  background-color: var(--soft-red);
+  width: 2.2rem;
+  border-radius: 0.4rem;
+}
+
+.bar__chart-day{
+  color: var(--light-brown);
+}
