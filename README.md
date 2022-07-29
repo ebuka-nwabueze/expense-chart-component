@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Preview Component](https://62e128d03c56db08563e0a43--dainty-dusk-896134.netlify.app/)
+- Live Site URL: [Expense chart Component](https://62e3e61ccb0d921aa3f555cc--effulgent-daifuku-376ef4.netlify.app/)
 
 
 ## Built with
