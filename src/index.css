@@ -64,6 +64,7 @@ body {
   padding: 1.5rem;
   min-height: min-content;
   /* max-width:200px; */
+  /* max-width: max-content; */
 }
 
 .card__chart > h2 {
@@ -81,8 +82,8 @@ body {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   display: flex;
-  /* justify-content: space-between; */
-  max-width: inherit;
+  justify-content: space-between;
+  gap: 4px;
 }
 
 .card__chart-summary{
