@@ -1,7 +1,6 @@
 import React from "react";
 import Chart from "./components/Chart";
 import Data from "./data.json"
-import {ChartInfo} from "./types/chartTypes"
 
 function App() {
   return (
