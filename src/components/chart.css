@@ -5,6 +5,7 @@
   align-items: center;
   cursor: pointer;
   gap: 5px;
+  position: relative;
 }
 
 .bar__chart-amount{
@@ -16,6 +17,9 @@
   /* width:rem; */
   text-align: center;
   font-weight: bold;
+  position: absolute;
+  /* top: calc(100% + 20px); */
+  display: none;
 }
 
 .bar__chart-height{
@@ -28,6 +32,6 @@
   color: var(--light-brown);
 }
 
-.bar__chart-height:hover{
-  background-color: opacity(4);
+.bar__chart:hover .bar__chart-height{
+  opacity: 0.8;
 }
