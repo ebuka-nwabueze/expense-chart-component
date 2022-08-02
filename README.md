@@ -9,7 +9,6 @@ This is a solution to the [Expense chart component challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -35,6 +34,45 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
+### What I learned
+
+The bar chart with the amount, amount(height and color), and day was achieved by using a flex with column. 
+- Then the height and color ``(bar__chart-height)`` bar was set with the props from the data source in percentage. 
+- The amount ```(bar__chart-amount)``` was placed position as absolute because if left with the normal size, it would overflow from the parent flex container. Therefore, making it absolute positioned made sure it stayed within its flex container. 
+- The position for ```(bar__chart-amount)``` was set at a calculated distance of the ``(bar__chart-height) + 20%`` from the bottom. The 20% ensure all the flex item has that same gap between the amount and height.
+
+see below:
+
+HTML:
+```html
+    <div className="bar__chart" onMouseEnter={handleMouse} onMouseLeave={handleMouse}>
+      <span className="bar__chart-amount" style={styles}>${amount}</span>
+      <div className="bar__chart-height" style={{ height: `${amount}%` }}></div>
+      <p className="bar__chart-day">{day}</p>
+    </div>
+```
+CSS:
+```css
+.bar__chart-amount{
+  color: var(--cream);
+  background-color: var(--dark-brown);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  display: none;
+}, 
+
+```
+Javascript:
+```js
+  const styles = onHover ? {
+    display: "block",
+    bottom: `calc(${amount + 20}%)`
+  } as React.CSSProperties : {}
+```
 
 ## Author
 

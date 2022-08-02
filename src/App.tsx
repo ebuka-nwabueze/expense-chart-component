@@ -27,8 +27,6 @@ function App() {
       <div className="card__chart">
         <h2>Spending - Last 7 days</h2>
         <div className="card__chart-bar">
-          {/* Here goes the bars */}
-          {/* bottom border */}
           { Data.map((chart, index) => (
             <Chart amount={chart.amount} day={chart.day} key={index}/>
           ))}
