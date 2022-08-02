@@ -65,7 +65,8 @@ CSS:
   display: none;
 }, 
 
-```Typescript:
+```
+Typescript:
 ```js
   const styles = onHover ? {
     display: "block",
