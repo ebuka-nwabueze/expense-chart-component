@@ -21,11 +21,21 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 
+### Screenshot
+
+Mobile
+
+![](./public/design/expense-mobile.png)
+
+Desktop
+
+![](./public/design/expense-desktop.png)
+
 
 
 ### Links
 
-- Live Site URL: [Expense chart Component](https://62e3e61ccb0d921aa3f555cc--effulgent-daifuku-376ef4.netlify.app/)
+- Live Site URL: [Expense chart Component](https://master--effulgent-daifuku-376ef4.netlify.app/)
 
 
 ## Built with
