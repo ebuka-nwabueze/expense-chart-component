@@ -83,7 +83,7 @@ body {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
 .card__chart-summary{

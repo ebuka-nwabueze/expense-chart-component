@@ -7,13 +7,19 @@ function Chart({ amount, day }: ChartInfo) {
   const [onHover, setOnHover] = useState(false)
 
   const handleMouse = () => {
-    setOnHover((prev) => !prev)
+    setOnHover((prev)=> !prev)
   }
+
+  const handleMouseOut = () => {
+    setOnHover((prev)=> !prev)
+    // setOnHover(false)
+  }
+
   // React.MouseEvent<HTMLDivElement, MouseEvent>
   return (
-    <div className="bar__chart" onMouseEnter={handleMouse} onMouseLeave={handleMouse}>
+    <div className="bar__chart" onMouseEnter={handleMouse} onMouseLeave={handleMouseOut}>
       <span className="bar__chart-amount" style={{
-        display: !onHover ? "none" : "block"
+        display: onHover ? "block" : "none"
       }}>${amount}</span>
       <div className="bar__chart-height" style={{ height: `${amount}%` }}></div>
   <p className="bar__chart-day">{day}</p>
