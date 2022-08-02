@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import "./chart.css";
 import { ChartInfo } from "../types/chartTypes";
-import { calculateNewValue } from "@testing-library/user-event/dist/utils";
 
 function Chart({ amount, day }: ChartInfo) {
   const [onHover, setOnHover] = useState(false)
